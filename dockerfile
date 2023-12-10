@@ -23,7 +23,7 @@ RUN dotnet restore
 
 COPY ./ /work/
 RUN mkdir /out/
-RUN dotnet publish -p:PublishReadyToRun=true  -o out -c Release 
+RUN dotnet publish -p:PublishReadyToRun=true  -c Release 
 
 CMD dotnet run learn
 ###########START NEW IMAGE###########################################
